@@ -25,6 +25,6 @@ while True:
 
     for i in range(len(to_pdf)):
         to_pdf[i] = to_pdf[i].resize((1700,2400), resample=img.ANTIALIAS)
-    pdf1_filename = input("nome do mangao final: ")
+    pdf1_filename = input("pdf name: ")
     to_pdf[0].save(pdf1_filename, "PDF" ,resolution=100.0, save_all=True, append_images = to_pdf)
 
